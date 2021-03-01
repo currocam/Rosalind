@@ -19,5 +19,6 @@ def txt_to_str(file='rosalind_dna.txt'):
         str_seq = f.read()
     return str_seq
 
-str_seq=txt_to_str()
-CountingDNANucleotides(str_seq)
+if __name__ == "__main__":
+    str_seq=txt_to_str()
+    CountingDNANucleotides(str_seq)
